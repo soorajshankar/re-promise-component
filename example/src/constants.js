@@ -1,5 +1,5 @@
 export const Promise_sample = `import React, { Component } from "react";
-import RePromise from "re-promise";
+import RePromise from "re-promise-component";
 import axios from "axios";
 
 function delay(t, v) {
@@ -25,7 +25,7 @@ export default class App extends Component {
 }`;
 
 export const Axios_sample = `import React, { Component } from "react";
-import RePromise from "re-promise";
+import RePromise from "re-promise-component";
 import axios from "axios";
 
 function delay(t, v) {

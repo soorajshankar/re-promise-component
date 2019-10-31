@@ -1,10 +1,10 @@
 {
-  "name": "re-promise",
+  "name": "re-promise-component",
   "version": "1.0.0",
   "description": "React Promise resolver component, inspired from react apollo client. This will help to have result,loading,error states without initializing additional states or hooks",
   "author": "soorajshankar",
   "license": "MIT",
-  "repository": "soorajshankar/re-promise",
+  "repository": "soorajshankar/re-promise-component",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",

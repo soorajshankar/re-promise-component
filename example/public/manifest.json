@@ -1,6 +1,6 @@
 {
-  "short_name": "re-promise",
-  "name": "re-promise",
+  "short_name": "re-promise-component",
+  "name": "re-promise-component",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

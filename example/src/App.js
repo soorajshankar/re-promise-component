@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import RePromise from "re-promise";
+import RePromise from "re-promise-component";
 import axios from "axios";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -14,14 +14,14 @@ export default class App extends Component {
   render() {
     return (
       <div style={{ margin: 100 }}>
-        <h1>Re-Promise </h1>
+        <h1>re-promise-component </h1>
         React Promise resolver component, inspired from react apollo client.
         This will help to have result,loading,error states without initializing
         additional states or hooks
         <h2>installation</h2>
         <code>
-          npm install re-promise
-          <br /> yarn add re-promise
+          npm install re-promise-component
+          <br /> yarn add re-promise-component
         </code>
         <h2>Use with Axios</h2>
         <h3>Code</h3>

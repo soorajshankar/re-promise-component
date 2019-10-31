@@ -1,20 +1,20 @@
-# re-promise
+# re-promise-component
 
 > React Promise resolver component, inspired from react apollo client. This will help to have result,loading,error states without initializing additional states or hooks
 
-[![NPM](https://img.shields.io/npm/v/re-promise.svg)](https://www.npmjs.com/package/re-promise) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/re-promise-component.svg)](https://www.npmjs.com/package/re-promise-component) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save re-promise
+npm install --save re-promise-component
 ```
 
 ## Usage
 
 ```jsx
 import React, { Component } from "react";
-import RePromise from "re-promise";
+import RePromise from "re-promise-component";
 import axios from "axios";
 
 function delay(t, v) {
