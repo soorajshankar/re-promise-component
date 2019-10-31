@@ -1,6 +1,6 @@
 {
   "name": "re-promise-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Promise resolver component, inspired from react apollo client. This will help to have result,loading,error states without initializing additional states or hooks",
   "author": "soorajshankar",
   "license": "MIT",

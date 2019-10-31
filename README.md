@@ -27,7 +27,7 @@ export default class App extends Component {
     return (
       <div>
         {/* Resolving promises */}
-        <RePromise promise={delay} args={2000}>
+        <RePromise promise={delay} args={[2000]}>
           {(result, error, loading) => {
             if (loading) return "Loading..";
             else if (error) return "Oops something went wrong!!";
@@ -36,7 +36,7 @@ export default class App extends Component {
         </RePromise>
 
         {/* For making api calls  */}
-        <RePromise promise={axios.get} args={"/"}>
+        <RePromise promise={axios.get} args={["/"]}>
           {(result, error, loading) => {
             if (loading) return "Loading..";
             else if (error) return "Oops something went wrong!!";
