@@ -1,22 +1,32 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-import styles from './styles.css'
+import styles from "./styles.css";
 
-export default class ExampleComponent extends Component {
+export default class RePromise extends Component {
+  state = {
+    result: null,
+    error: null,
+    loading: true
+  };
   static propTypes = {
-    text: PropTypes.string
+    promise: PropTypes.func
+  };
+  componentDidMount() {
+    const { promise, args } = this.props;
+    promise(...args)
+      .then(result => {
+        console.log({ result });
+        this.setState({ result, error: null, loading: false });
+      })
+      .catch(error => {
+        this.setState({ result: null, error, loading: false });
+      });
   }
 
   render() {
-    const {
-      text
-    } = this.props
+    const { result, error, loading } = this.state;
 
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
+    return this.props.children(result, error, loading);
   }
 }
